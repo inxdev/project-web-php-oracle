@@ -49,7 +49,7 @@
   echo '<br>';
   echo $resultado;
   echo '<br>';
-  echo 'Se llamo correctamente al procedimiento por_agregar_inscripcion';
+  echo 'Se llamo correctamente al procedimiento pro_agregar_prestamo';
   oci_free_statement($stid);
   oci_close($conn);
 ?>

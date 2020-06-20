@@ -30,7 +30,7 @@
             Prestamos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Inscripcion</a>
+            <a class="dropdown-item" href="5-paginaAltaPrestamo.php">Inscripcion</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Modificacion</a>
             <div class="dropdown-divider"></div>
@@ -76,8 +76,15 @@
             <a class="dropdown-item" href="#">Something</a>
           </div>
         </li>
-      </ul>
 
+        <ul class="navbar-nav ml-lg-5 ml-sm-0 mr-auto">
+          <li class="nav-item">
+            <div class="text-light">
+              <?php echo "<h3>Usuario: $_SESSION[usuarioSession]</h3>";?>
+            </div>
+          </li>
+        </ul>
+      </ul>
     <div class="row justify-content-end">
       <form class="form-inline my-2 mr-3 my-lg-0">
         <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->

@@ -1,6 +1,9 @@
 <?php
   // se inicia la session de php
   session_start();
+  // controla si hay una session abierta
+  // si hay una session abierta se despliega la pagina
+  if(isset($_SESSION['usuarioSession'])){
 ?>
 
 <!DOCTYPE html>
@@ -32,27 +35,30 @@
 
 <body class="d-flex flex-column">
   <?php
-    // llamada al menu (NavBar) 
+    // llamada al archivo que contiene el menu (NavBar) 
     require_once "php/NavBar.php";
-    // llamada a la conexion
+    // llamada al archivo que contiene la conexion a la bd con los datos de session
     require_once "php/conexionSecundaria.php";
     
-    // Para mostrar el usuario y la password del usuario que se logueo
+    // codigo para mostrar el usuario y la password del usuario que se logueo y para el cual se creo la session
     // echo "<p>El usuario es: $_SESSION[usuarioSession]</p>";
     // echo "<p>El usuario es: $_SESSION[passwordSession]</p>";
 
-    echo '<div class="container">';
-      echo '<div class="row justify-content-between">';
-        echo '<div class="col-4"><h4> Bienvenido! </h4></div>';
-        echo '<div class="col-4"><h4>Usuario: '.$_SESSION['usuarioSession'].'</h4></div>';
-      echo '</div>';
-    echo '</div>';  
-  //  Llamamos a el body de la pagina principal
+  // Llamamos a al archivo que contiene el body de la pagina principal
    require_once "php/bodyPrincipal.php";
    ?>
 </body>
 
 </html>
+<?php 
+  }else{
+    //Si no hay una session abierta dirige al login
+    header("Location:1-login.php");
+  }
+?>
+
+
+<!--  PRUEBAS QUE DEJE COMENTADAS  -->
 
 <!--     $conn = connection();
     

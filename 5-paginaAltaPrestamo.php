@@ -13,11 +13,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Inscripcion Cliente</title>
+    <title>Alta Prestamo</title>
     <?php
       //llamado del archivo que contiene los estilos
       require_once "php/estilos.php";
     ?>
+
   </head>
   
   <body class="d-flex flex-column">
@@ -54,7 +55,7 @@
                   </div> -->
                   <hr class="my-3">
                   <div class="form-group row">
-                    <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Datos cliente</label>
+                    <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Solicitud de prestamo</label>
                   </div>
                   <hr class="my-3">
                   <!-- NOTE INPUT DNI TITULAR -->

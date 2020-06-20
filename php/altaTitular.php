@@ -78,7 +78,10 @@ if (!$conn) {
     oci_bind_by_name($stid, ':pDireccionG' , $addressg);
     oci_bind_by_name($stid, ':pIdTipoTelefonoG' , $tipoTelefonog);
     oci_bind_by_name($stid, ':pNumeroTelefonoG' , $telg, 255);
-    oci_execute($stid);
+    $resultado = oci_execute($stid);
+    echo '<br>';
+    echo $resultado;
+    echo '<br>';
     echo 'Se llamo correctamente al procedimiento por_agregar_inscripcion';
     oci_free_statement($stid);
     oci_close($conn);

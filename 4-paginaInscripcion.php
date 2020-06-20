@@ -28,7 +28,7 @@
               <div class="card-body">
                 <!-- Titulo -->
                 <h5 class="card-title text-center">Inscripcion clientes</h5>
-                <form class="form-signin" action="pruebas/altaTitular.php" method="POST">
+                <form class="form-signin" action="php/altaTitular.php" method="POST">
                   <!-- <div class="form-group row">   
                     <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Buscar cliente</label>
                   </div>

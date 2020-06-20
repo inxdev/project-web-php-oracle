@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="Moura" content="">
 
-  <title>Inicio TP FINAL</title>
+  <title>Index TP FINAL</title>
 
       <!-- Bootstrap CSS CDN -->
       <link 

@@ -8,41 +8,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
-  <!-- Boostrap y archivos de estilos -->
-    <!-- Bootstrap CSS -->
-    <link 
-    rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous">
-
-    <!-- Custom fonts for this template -->
-    <link href="assets/css/all.css" rel="stylesheet">
-    <link href="assets/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-      type="text/css">
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" href="assets/css/inscripcion.css">
-    <!-- <script src="https://kit.fontawesome.com/f87a832d0e.js" crossorigin="anonymous"></script> -->
-
+    <?php require_once "php/estilos.php"; ?>
   </head>
   <body class="d-flex flex-column">
   <?php
     // llamada al menu (NavBar) 
     require_once "php/NavBar.php";
-    // llamada a la conexion
-    require_once "php/conexionSecundaria.php";
     
     // Para mostrar el usuario y la password del usuario que se logueo
     // echo "<p>El usuario es: $_SESSION[usuarioSession]</p>";
     // echo "<p>El usuario es: $_SESSION[passwordSession]</p>";
   ?>
+      <!-- Division para el registro -->
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-sm-10 col-md-7 col-lg-8 mx-auto">
             <div class="card card-signin my-5">
               <div class="card-body">
+                <!-- Titulo -->
                 <h5 class="card-title text-center">Inscripcion clientes</h5>
-                <form class="form-signin" action="" method="POST">
+                <form class="form-signin" action="pruebas/altaTitular.php" method="POST">
                   <!-- <div class="form-group row">   
                     <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Buscar cliente</label>
                   </div>
@@ -61,70 +47,80 @@
                     <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Datos cliente</label>
                   </div>
                   <hr class="my-3">
+                  <!-- NOTE INPUT DNI TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputDniClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">DNI</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputDniClient" placeholder="DNI">
+                      <input type="text" class="form-control" name="dni" id="inputDniClient" placeholder="DNI">
                     </div>
                   </div>
+                  <!-- NOTE INPUT APELLIDO TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputSurnaClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Apellido</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputSurnaClient" placeholder="Apellido">
+                      <input type="text" class="form-control" name="surname" id="inputSurnaClient" placeholder="Apellido">
                     </div>
                   </div>
+                  <!-- NOTE INPUT NOMBRE TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputNameClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Nombre</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputNameClient" placeholder="Nombre">
+                      <input type="text" class="form-control" name="name" id="inputNameClient" placeholder="Nombre">
                     </div>
                   </div>
+                  <!-- NOTE INPUT FECHA NACIMIENTO TITULAR -->
                   <div class="form-group row">
                     <label for="inputFNC" class="col-sm-4 col-md-4 col-lg-2 col-form-label">F. Nacimiento</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="date" class="form-control" id="inputFNC" value="2011-08-19">
+                      <input type="text" class="form-control" name="birthday" id="inputFNC" placeholder="DD/MM/YYYY">
                     </div>
                   </div>
+                  <!-- NOTE INPUT DIRECCION TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputAddrClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Direccion</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputAddrClient" placeholder="Direccion">
+                      <input type="text" class="form-control" name="address" id="inputAddrClient" placeholder="Direccion">
                     </div>
                   </div>
+                  <!-- NOTE INPUT TIPO TELEFONO TITULAR -->
                   <div class="form-group row">
                     <label for="tipoTelefonoClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Tipo Telefono</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <select class="form-control" id="tipoTelefonoClient">
-                        <option>1</option>
-                        <option>2</option>
-                      </select>
+                    <select class="form-control" name="tipoTelefono" id="tipoTelefonoClient">
+                        <option value='1'>Telefono fijo</option>
+                        <option value='2'>Celular</option>     
+                        <!-- require_once "php/tipoTelefono.php"; ?> -->
+                    </select>
                     </div>
                   </div>
+                  <!-- NOTE INPUT NRO TELEFONO TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputTelClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Telefono</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputTelClient" placeholder="Telefono">
+                      <input type="text" class="form-control" name="tel" id="inputTelClient" placeholder="Telefono">
                     </div>
                   </div>
+                  <!-- NOTE INPUT INGRESOS TOTALES TITULAR-->
                   <div class="form-group row">                          
                     <label for="inputIngClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Ingresos Totales</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputIngClient" placeholder="Ingresos Totales">
+                      <input type="text" class="form-control" name="IngTitular" id="inputIngClient" placeholder="Ingresos Totales">
                     </div>
                   </div>
+                  <!-- NOTE INPUT CANTIDAD FAMILIARES TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputFamilyClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Cantidad Familiares</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputFamilyClient" placeholder="Cantidad Familliares">
+                      <input type="text" class="form-control" name="cantFamiliar" id="inputFamilyClient" placeholder="Cantidad Familliares">
                     </div>
                   </div>
+                  <!-- NOTE INPUT INGRESOS RETENIDOS TITULAR -->
                   <div class="form-group row">                          
                     <label for="inputRetenClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Ingresos Retenidos</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputRetenClient" placeholder="Ingresos Retenidos">
+                      <input type="text" class="form-control" name="IngRetenidos" id="inputRetenClient" placeholder="Ingresos Retenidos">
                     </div>
                   </div>
-
                   <!-- <hr class="my-4">
                   <div class="form-group row">   
                     <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Buscar garante</label>
@@ -144,51 +140,59 @@
                     <label class="col-sm-3 col-md-7 col-lg-8 col-form-label">Datos garante</label>
                   </div>
                   <hr class="my-3">
+                  <!-- NOTE INPUT DNI GARANTE -->
                   <div class="form-group row">                          
                     <label for="inputDniGarante" class="col-sm-4 col-md-4 col-lg-2 col-form-label">DNI</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputDniGarante" placeholder="DNI">
+                      <input type="text" class="form-control" name="dnig" id="inputDniGarante" placeholder="DNI">
                     </div>
                   </div>
+                  <!-- NOTE INPUT APELLIDO GARANTE -->
                   <div class="form-group row">                          
                     <label for="inputSurnaGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Apellido</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputSurnaGar" placeholder="Apellido">
+                      <input type="text" class="form-control" name="surnameg" id="inputSurnaGar" placeholder="Apellido">
                     </div>
                   </div>
+                  <!-- NOTE INPUT NOMBRE GARANTE -->     
                   <div class="form-group row">                          
                     <label for="inputNameGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Nombre</label>
-                    <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputNameGar" placeholder="Nombre">
+                    <div class="col-sm-6 col-md-6 col-lg-9">    
+                      <input type="text" class="form-control" name="nameg" id="inputNameGar" placeholder="Nombre">
                     </div>
                   </div>
+                  <!-- NOTE FECHA NACIMIENTO GARANTE -->
                   <div class="form-group row">
                     <label for="inputFNG" class="col-sm-4 col-md-4 col-lg-2 col-form-label">F. Nacimiento</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="date" class="form-control" id="inputFNG" value="2011-08-19">
+                      <input type="text" class="form-control" name="birthdayg" id="inputFNG" placeholder="DD/MM/YYYY">
                     </div>
                   </div>
+                  <!-- NOTE DIRECCION GARANTE -->
                   <div class="form-group row">                          
                     <label for="inputAddrGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Direccion</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputAddrGar" placeholder="Direccion">
+                      <input type="text" class="form-control" name="addressg" id="inputAddrGar" placeholder="Direccion">
                     </div>
                   </div>
+                  <!-- NOTE TIPO TELEFONO GARANTE -->
                   <div class="form-group row">
                     <label for="tipoTelGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Tipo Telefono</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <select class="form-control" id="tipoTelGar">
-                        <option>1</option>
-                        <option>2</option>
+                      <select class="form-control" name="tipoTelefonog" id="tipoTelGar">
+                        <option value='1'>Telefono fijo</option>
+                        <option value='2'>Celular</option>
                       </select>
                     </div>
                   </div>
+                  <!-- NOTE TELEFONO GARANTE -->
                   <div class="form-group row">                          
                     <label for="inputTelGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Telefono</label>
                     <div class="col-sm-6 col-md-6 col-lg-9">
-                      <input type="text" class="form-control" id="inputTelGar" placeholder="Telefono">
+                      <input type="text" class="form-control" name="telg" id="inputTelGar" placeholder="Telefono">
                     </div>
                   </div>
+                  <!-- NOTE BOTTON INSCRIBIR -->
                   <hr class="my-4">
                   <div class="form-group row">
                     <label for="" class="col-sm-5 col-md-5 col-lg-10 col-form-label"></label>
@@ -225,79 +229,5 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
       </script>
-    </body>
+  </body>
 </html>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-    $('#SearchClient').click(function(){
-      if($('#inputSClient').val()==""){
-        alert("ingresar dni");
-      }
-    });
-
-    $('#SearchGarante').click(function(){
-      if($('#inputSGarante').val()==""){
-        alert("ingresar dni");
-      }
-    });
-
-    $('#btnInscribir').click(function(){
-
-      if($('#inputDniClient').val()==""){
-        alert("Ingresar el dni del cliente");
-      }else if($('#inputSurnaClient').val()==""){
-        alert("ingresar el apellido del cliente");
-      }else if($('#inputNameClient').val()==""){
-        alert("ingresar el nombre del cliente");
-      }else if($('#inputAddrClient').val()==""){
-        alert("ingresar la direccion del cliente");
-      }
-      
-      // else if($('#inputTelClient').val()==""){
-      //   alert("Debes ingresar numero de telefono del cliente");
-      // }
-      /*
-      else if($('#inputDniGarante').val()==""){
-        alert("ingresar el dni del garante");
-      }else if($('#inputSurnaGar').val()==""){
-        alert("ingresar el apellido del garante");
-      }else if($('#inputNameGar').val()==""){
-        alert("ingresar el nombre del garante");
-      }else if($('#inputAddrGar').val()==""){
-        alert("ingresar la direccion del garante");
-      }else if($('#inputTelGar').val()==""){
-        alert("Debes ingresar numero de telefono del garante");
-      }
-      */
-
-      inscripcion = "dni_client=" + $('#inputDniClient').val() + "&surname_client=" +  $('#inputSurnaClient').val() +
-                "&name_client=" + $('#inputNameClient').val() + "&birthday_client=" + $('#inputFNC').val() +
-                "&address_client=" + $('#inputAddrClient').val();
-              
-              // + "&type_tel_client=" + $('#tipoTelefonoClient').val() +
-              // "&tel_client" + $('#inputTelClient').val();
-              //  + 
-              //  "&dni_gar=" + $('#inputDniGarante').val() + "&surname_gar" + $('#inputSurnaGar').val() + 
-              //  "&name_gar" + $('#inputNameGar').val() + "&birthday_gar" + $('#inputFNG').val() +
-              //  "&address_gar" + $('#inputAddrGar').val() + "&type_tel_gar" + $('#tipoTelGar').val() +
-              //  "&tel_gar=" + $('#inputTelGar').val();
-                console.log("dni_client= " + $('#inputDniClient').val() + "&surname_client= " +  $('#inputSurnaClient').val() +
-                "&name_client= " + $('#inputNameClient').val() + "&birthday_client= " + $('#inputFNC').val() +
-                "&address_client= " + $('#inputAddrClient').val());
-              $.ajax({
-                type: "POST",
-                url: "php/inscripcion.php",
-                data: inscripcion,
-                success: function(r){
-                  if (r==1){
-                    alert("Inscripcion realizada con exito");
-                  }else{
-                    alert("Fallo al agregar inscripcion");
-                  }
-                }
-              })
-
-    });
-  });
-</script>

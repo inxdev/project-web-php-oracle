@@ -9,5 +9,5 @@
     // echo "Se ha cerrado sesion correctamente<br>";
     // echo "volver al inicio<br>";
     // echo "<a href='../0-index.php'>Inicio</a>";
-    header("Location:../0-index.php");
+    header("Location:../index.php");
 ?>

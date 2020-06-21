@@ -52,5 +52,3 @@
   echo 'Se llamo correctamente al procedimiento pro_agregar_prestamo';
   oci_free_statement($stid);
   oci_close($conn);
-?>
-

@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav justify-content-center mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#page-top"> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="3-paginaPrincipal.php"> Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,7 +40,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Convenio
+          Convenios
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Inscripcion</a>
@@ -53,19 +53,23 @@
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Informe
+          Informes
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Inscripcion</a>
+          <a class="dropdown-item" href="#">Lista de clientes</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Modificacion</a>
+          <a class="dropdown-item" href="#">Lista de titulares</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something</a>
+          <a class="dropdown-item" href="#">Lista de garantes</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Lista de prestamos</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Lista de prestamos con deudas</a>
         </div>
       </li>
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Something
+          
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Something</a>
@@ -74,7 +78,7 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something</a>
         </div>
-      </li>
+      </li> -->
 
       <ul class="navbar-nav ml-lg-5 ml-sm-0 mr-auto">
         <li class="nav-item">

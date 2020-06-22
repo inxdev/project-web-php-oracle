@@ -54,9 +54,10 @@ $conn = oci_connect($_SESSION['usuarioSession'], $_SESSION['passwordSession'], '
 if (!$conn) {
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-} else {
-    echo "conexion exitosa <br>";
 }
+// else {
+//     echo "conexion exitosa <br>";
+// }
 
 //Cuando se analizan programas PL/SQL, debería existir un punto y coma final de la cadena
 $stid = oci_parse($conn, 'begin pro_agregar_inscripcion(:pNroDocumentop, :pApellido, :pNombre, :pFNacimiento, :pDireccion, :pIdTipoTelefono, 
@@ -79,10 +80,8 @@ oci_bind_by_name($stid, ':pFNacimientoG', $birthdayg);
 oci_bind_by_name($stid, ':pDireccionG', $addressg);
 oci_bind_by_name($stid, ':pIdTipoTelefonoG', $tipoTelefonog);
 oci_bind_by_name($stid, ':pNumeroTelefonoG', $telg, 255);
-$resultado = oci_execute($stid);
-echo '<br>';
-echo $resultado;
-echo '<br>';
-echo 'Se llamo correctamente al procedimiento por_agregar_inscripcion';
+oci_execute($stid);
+
+header("Location:../4-paginaInscripcion.php");
 oci_free_statement($stid);
 oci_close($conn);

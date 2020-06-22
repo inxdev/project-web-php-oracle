@@ -33,10 +33,11 @@ $conn = oci_connect($_SESSION['usuarioSession'], $_SESSION['passwordSession'], '
 if (!$conn) {
   $e = oci_error();
   trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-} else {
-  echo "conexion exitosa <br>";
 }
-
+// else {
+//   echo "conexion exitosa <br>";
+// }
+// $resultado = 0;
 //Cuando se analizan programas PL/SQL, debería existir un punto y coma final de la cadena
 $stid = oci_parse($conn, 'begin pro_agregar_prestamo(:pNroDocumentot, :capital, :pcantCuotas, :pintAnual, :pventMen, pNroDocumentog ); end;');
 oci_bind_by_name($stid, ':pNroDocumentot', $dni);
@@ -45,11 +46,13 @@ oci_bind_by_name($stid, ':pcantCuotas', $cantCuotas);
 oci_bind_by_name($stid, ':pintAnual', $intAnual);
 oci_bind_by_name($stid, ':pventMen', $ventMen);
 oci_bind_by_name($stid, ':pNroDocumentog', $dnig, 255);
-
 $resultado = oci_execute($stid);
-echo '<br>';
-echo $resultado;
-echo '<br>';
-echo 'Se llamo correctamente al procedimiento pro_agregar_prestamo';
+// if ($resultado = 1) {
+//   echo '<script>alert("La inscripion se realizo de manera correcta")</script>';
+// } else {
+//   echo '<script>alert("Surgio un error no se pudo agregar la inscripion")</script>';
+// }
+// $resultado = 0;
+header("Location:../5-paginaAltaPrestamo.php");
 oci_free_statement($stid);
 oci_close($conn);

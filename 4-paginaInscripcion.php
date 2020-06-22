@@ -62,35 +62,35 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputDniClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">DNI</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="dni" id="inputDniClient" placeholder="DNI">
+                    <input type="text" class="form-control" name="dni" id="inputDniClient" placeholder="DNI" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT APELLIDO TITULAR -->
                 <div class="form-group row">
                   <label for="inputSurnaClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Apellido</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="surname" id="inputSurnaClient" placeholder="Apellido">
+                    <input type="text" class="form-control" name="surname" id="inputSurnaClient" placeholder="Apellido" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT NOMBRE TITULAR -->
                 <div class="form-group row">
                   <label for="inputNameClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Nombre</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="name" id="inputNameClient" placeholder="Nombre">
+                    <input type="text" class="form-control" name="name" id="inputNameClient" placeholder="Nombre" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT FECHA NACIMIENTO TITULAR -->
                 <div class="form-group row">
                   <label for="inputFNC" class="col-sm-4 col-md-4 col-lg-2 col-form-label">F. Nacimiento</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="birthday" id="inputFNC" placeholder="DD/MM/YYYY">
+                    <input type="text" class="form-control" name="birthday" id="inputFNC" placeholder="DD/MM/YYYY" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT DIRECCION TITULAR -->
                 <div class="form-group row">
                   <label for="inputAddrClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Direccion</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="address" id="inputAddrClient" placeholder="Direccion">
+                    <input type="text" class="form-control" name="address" id="inputAddrClient" placeholder="Direccion" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT TIPO TELEFONO TITULAR -->
@@ -108,28 +108,28 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputTelClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Telefono</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="tel" id="inputTelClient" placeholder="Telefono">
+                    <input type="text" class="form-control" name="tel" id="inputTelClient" placeholder="Telefono" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT INGRESOS TOTALES TITULAR-->
                 <div class="form-group row">
                   <label for="inputIngClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Ingresos Totales</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="IngTitular" id="inputIngClient" placeholder="Ingresos Totales">
+                    <input type="text" class="form-control" name="IngTitular" id="inputIngClient" placeholder="Ingresos Totales" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT CANTIDAD FAMILIARES TITULAR -->
                 <div class="form-group row">
                   <label for="inputFamilyClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Cantidad Familiares</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="cantFamiliar" id="inputFamilyClient" placeholder="Cantidad Familliares">
+                    <input type="text" class="form-control" name="cantFamiliar" id="inputFamilyClient" placeholder="Cantidad Familliares" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT INGRESOS RETENIDOS TITULAR -->
                 <div class="form-group row">
                   <label for="inputRetenClient" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Ingresos Retenidos</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="IngRetenidos" id="inputRetenClient" placeholder="Ingresos Retenidos">
+                    <input type="text" class="form-control" name="IngRetenidos" id="inputRetenClient" placeholder="Ingresos Retenidos" required>
                   </div>
                 </div>
                 <!-- <hr class="my-4">
@@ -155,35 +155,35 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputDniGarante" class="col-sm-4 col-md-4 col-lg-2 col-form-label">DNI</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="dnig" id="inputDniGarante" placeholder="DNI">
+                    <input type="text" class="form-control" name="dnig" id="inputDniGarante" placeholder="DNI" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT APELLIDO GARANTE -->
                 <div class="form-group row">
                   <label for="inputSurnaGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Apellido</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="surnameg" id="inputSurnaGar" placeholder="Apellido">
+                    <input type="text" class="form-control" name="surnameg" id="inputSurnaGar" placeholder="Apellido" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT NOMBRE GARANTE -->
                 <div class="form-group row">
                   <label for="inputNameGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Nombre</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="nameg" id="inputNameGar" placeholder="Nombre">
+                    <input type="text" class="form-control" name="nameg" id="inputNameGar" placeholder="Nombre" required>
                   </div>
                 </div>
                 <!-- NOTE FECHA NACIMIENTO GARANTE -->
                 <div class="form-group row">
                   <label for="inputFNG" class="col-sm-4 col-md-4 col-lg-2 col-form-label">F. Nacimiento</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="birthdayg" id="inputFNG" placeholder="DD/MM/YYYY">
+                    <input type="text" class="form-control" name="birthdayg" id="inputFNG" placeholder="DD/MM/YYYY" required>
                   </div>
                 </div>
                 <!-- NOTE DIRECCION GARANTE -->
                 <div class="form-group row">
                   <label for="inputAddrGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Direccion</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="addressg" id="inputAddrGar" placeholder="Direccion">
+                    <input type="text" class="form-control" name="addressg" id="inputAddrGar" placeholder="Direccion" required>
                   </div>
                 </div>
                 <!-- NOTE TIPO TELEFONO GARANTE -->
@@ -200,14 +200,14 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputTelGar" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Telefono</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="telg" id="inputTelGar" placeholder="Telefono">
+                    <input type="text" class="form-control" name="telg" id="inputTelGar" placeholder="Telefono" required>
                   </div>
                 </div>
                 <!-- NOTE BOTTON INSCRIBIR -->
                 <hr class="my-4">
                 <div class="form-group row">
                   <label for="" class="col-sm-5 col-md-5 col-lg-10 col-form-label"></label>
-                  <button class="btn btn-lg btn-primary text-uppercase" type="submit" id="btnInscribir">Inscribir</button>
+                  <button class="btn btn-lg btn-primary text-uppercase" name="submit" type="submit" id="btnInscribir">Inscribir</button>
                 </div>
               </form>
             </div>
@@ -241,6 +241,79 @@ if (isset($_SESSION['usuarioSession'])) {
 
   </html>
 <?php
+  // if (isset($_POST['submit'])) {
+  //   function test_input($data)
+  //   {
+  //     //funcion para pasar a string y que nose ingrese un script
+  //     $data = stripslashes($data);
+  //     $data = htmlspecialchars($data);
+  //     return $data;
+  //   }
+  //   //tomamos el valor de usuario pasado por post y lo guardamos en una variable $usuario
+  //   //llamamos a una funcion que verifica los datos ingresados
+  //   $dni = test_input($_POST['dni']);
+  //   $surname = test_input($_POST['surname']);
+  //   $name = test_input($_POST['name']);
+  //   $birthday = test_input($_POST['birthday']);
+  //   $address = test_input($_POST['address']);
+  //   $tipoTelefono = test_input($_POST['tipoTelefono']);
+  //   $tel = test_input($_POST['tel']);
+  //   $IngresosTotales = test_input($_POST['IngTitular']);
+  //   $CantFamiliares = test_input($_POST['cantFamiliar']);
+  //   $IngresosRetenidos = test_input($_POST['IngRetenidos']);
+  //   $dnig = test_input($_POST['dnig']);
+  //   $surnameg = test_input($_POST['surnameg']);
+  //   $nameg = test_input($_POST['nameg']);
+  //   $birthdayg = test_input($_POST['birthdayg']);
+  //   $addressg = test_input($_POST['addressg']);
+  //   $tipoTelefonog = test_input($_POST['tipoTelefonog']);
+  //   $telg = test_input($_POST['telg']);
+
+  //   $conn = oci_connect($_SESSION['usuarioSession'], $_SESSION['passwordSession'], '192.168.0.31/ORCL', 'AL32UTF8');
+  //   if (!$conn) {
+  //     $e = oci_error();
+  //     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
+  //   }
+  //   // else {
+  //   //   echo "conexion exitosa <br>";
+  //   // }
+  //   $resultado = 0;
+  //   //Cuando se analizan programas PL/SQL, debería existir un punto y coma final de la cadena
+  //   $stid = oci_parse($conn, 'begin pro_agregar_inscripcion(:pNroDocumentop, :pApellido, :pNombre, :pFNacimiento, :pDireccion, :pIdTipoTelefono, 
+  //                                 :pNumeroTelefono, :pIngresosTotales, :pCantFamiliares, :pIngresosRetenidos, :pNroDocumentoG, :pApellidoG, :pNombreG,
+  //                                 :pFNacimientoG, :pDireccionG, :pIdTipoTelefonoG , :pNumeroTelefonoG ); end;');
+  //   oci_bind_by_name($stid, ':pNroDocumentop', $dni);
+  //   oci_bind_by_name($stid, ':pApellido', $surname);
+  //   oci_bind_by_name($stid, ':pNombre', $name);
+  //   oci_bind_by_name($stid, ':pFNacimiento', $birthday);
+  //   oci_bind_by_name($stid, ':pDireccion', $address);
+  //   oci_bind_by_name($stid, ':pIdTipoTelefono', $tipoTelefono);
+  //   oci_bind_by_name($stid, ':pNumeroTelefono', $tel);
+  //   oci_bind_by_name($stid, ':pIngresosTotales', $IngresosTotales);
+  //   oci_bind_by_name($stid, ':pCantFamiliares', $CantFamiliares);
+  //   oci_bind_by_name($stid, ':pIngresosRetenidos', $IngresosRetenidos);
+  //   oci_bind_by_name($stid, ':pNroDocumentoG', $dnig);
+  //   oci_bind_by_name($stid, ':pApellidoG', $surnameg);
+  //   oci_bind_by_name($stid, ':pNombreG', $nameg);
+  //   oci_bind_by_name($stid, ':pFNacimientoG', $birthdayg);
+  //   oci_bind_by_name($stid, ':pDireccionG', $addressg);
+  //   oci_bind_by_name($stid, ':pIdTipoTelefonoG', $tipoTelefonog);
+  //   oci_bind_by_name($stid, ':pNumeroTelefonoG', $telg, 255);
+  //   $resultado = oci_execute($stid);
+  //   // echo '<br>';
+  //   // echo $resultado;
+  //   if ($resultado = 1) {
+  //     echo '<script>alert("La inscripion se realizo de manera correcta")</script>';
+  //   } else {
+  //     echo '<script>alert("Surgio un error no se pudo agregar la inscripion")</script>';
+  //   }
+
+  //   // echo '<br>';
+  //   // echo 'Se llamo correctamente al procedimiento por_agregar_inscripcion';
+  //   $resultado = 0;
+  //   oci_free_statement($stid);
+  //   oci_close($conn);
+  // }
 } else {
   //Si no hay una session abierta dirige al login
   header("Location:1-login.php");

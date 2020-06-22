@@ -71,7 +71,7 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputDniTitular" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Dni titular</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="dni" id="inputDniTitular" placeholder="DNI">
+                    <input type="text" class="form-control" name="dni" id="inputDniTitular" placeholder="DNI" required>
                   </div>
                 </div>
                 <hr class="my-3">
@@ -82,28 +82,28 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputCapital" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Capital</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="capital" id="inputCapital" placeholder="Capital">
+                    <input type="text" class="form-control" name="capital" id="inputCapital" placeholder="Capital" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT CANTIDAD DE CUOTAS PRESTAMO -->
                 <div class="form-group row">
                   <label for="inputCantCuotas" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Cantidad cuotas</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="cantCuotas" id="inputCantCuotas" placeholder="Cantidad de cuotas">
+                    <input type="text" class="form-control" name="cantCuotas" id="inputCantCuotas" placeholder="Cantidad de cuotas" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT INTERES ANUAL PRESTAMO -->
                 <div class="form-group row">
                   <label for="inputIntAnual" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Interes anual</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="intAnual" id="inputIntAnual" placeholder="5 - 10 - 100">
+                    <input type="text" class="form-control" name="intAnual" id="inputIntAnual" placeholder="5 - 10 - 100" required>
                   </div>
                 </div>
                 <!-- NOTE INPUT VENCIMIENTO MENSUAL -->
                 <div class="form-group row">
                   <label for="inputVentMen" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Vencimiento mensual</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="ventMen" id="inputVentMen" placeholder="Vencimiento mensual">
+                    <input type="text" class="form-control" name="ventMen" id="inputVentMen" placeholder="Vencimiento mensual" required>
                   </div>
                 </div>
                 <hr class="my-3">
@@ -115,7 +115,7 @@ if (isset($_SESSION['usuarioSession'])) {
                 <div class="form-group row">
                   <label for="inputDniG" class="col-sm-4 col-md-4 col-lg-2 col-form-label">Dni garante</label>
                   <div class="col-sm-6 col-md-6 col-lg-9">
-                    <input type="text" class="form-control" name="dnig" id="inputDniClientG" placeholder="DNI">
+                    <input type="text" class="form-control" name="dnig" id="inputDniClientG" placeholder="DNI" required>
                   </div>
                 </div>
                 <hr class="my-4">

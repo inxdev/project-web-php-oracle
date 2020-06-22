@@ -7,7 +7,7 @@ if (isset($_SESSION['usuarioSession'])) {
 ?>
 
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="es">
 
   <head>
 
@@ -241,6 +241,7 @@ if (isset($_SESSION['usuarioSession'])) {
 
   </html>
 <?php
+  // PODRIAMOS PONER LA LOGICA PARA LLAMAR AL PROCEDIMIENTO DE LA SIGuiENTE MANERA
   // if (isset($_POST['submit'])) {
   //   function test_input($data)
   //   {

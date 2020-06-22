@@ -15,4 +15,4 @@ Tools:
   - CSS
   - BOOSTRAP
   - JAVASCRIPT
-  - JQUERY
+  - JQUERY / AJAX

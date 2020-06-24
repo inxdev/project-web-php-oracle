@@ -18,6 +18,7 @@ if (isset($_SESSION['usuarioSession'])) {
     <title>Inicio</title>
 
     <?php
+    //llamado del archivo que contiene los estilos
     require_once "php/estilos.php";
     ?>
 

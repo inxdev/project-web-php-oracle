@@ -12,8 +12,11 @@ if (isset($_SESSION['usuarioSession'])) {
   <head>
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Moura Elias" content="">
+
     <title>Alta Prestamo</title>
     <?php
     //llamado del archivo que contiene los estilos

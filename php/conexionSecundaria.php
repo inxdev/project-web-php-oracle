@@ -1,7 +1,7 @@
 <?php
 // session_start();
-// $user = $_SESSION['usuarioSession'];
-// $passwrod = $_SESSION['passwordSession'];
+// no necesitamos session_start() porque la pagina que requiere esta funcion
+// ya tiene definido session_start() en su codigo
 
 //funcion para devolver una conexion
 function connection()
@@ -13,5 +13,6 @@ function connection()
     $e = oci_error();
     trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
   }
+  // devuelve una conexion de la BD;
   return $conn;
 }

@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/inscripcion.css">
+  <meta name="description" content="">
+  <meta name="Moura Elias" content="">
+
+  <?php
+  require_once "php/estilos.php";
+  ?>
 </head>
 
 <body class="d-flex flex-column">
@@ -20,8 +22,9 @@
             <div style="text-align : center;">
               <img class="img-fluid " src="assets/img/login2.png" alt="">
             </div>
+            <!-- TODO: from -->
             <form class="form-signin" action="php/conexionPrincipal.php" method="POST">
-              <!-- TODO: from -->
+
               <div class="form-label-group">
                 <!-- <label for="inputUser">Usuario</label> -->
                 <input type="text" id="inputUser" name="user" class="form-control" placeholder="Usuario" required autofocus>

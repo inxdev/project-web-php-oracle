@@ -5,28 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="Moura" content="">
+  <meta name="Moura Elias" content="">
 
-  <title>Index TP FINAL</title>
+  <title>TP FINAL</title>
 
-  <!-- Bootstrap CSS CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-
-  <!-- Custom fonts for this template -->
-  <link href="assets/css/all.css" rel="stylesheet">
-  <link href="assets/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- Custom styles for this template -->
-  <link href="assets/css/landing-page.css" rel="stylesheet">
-  <!-- <link href="css/styles.css" rel="stylesheet" /> -->
-  <!-- <link rel="stylesheet" href="assets/css/inscripcion.css"> -->
-
+  <?php
+  require_once "php/estilos.php";
+  ?>
 </head>
 
 <body id="page-top">
 
+  <!-- Menu superior de la pagina de inicio -->
   <nav class="navbar navbar-expand-lg sticky-top navbar navbar-dark bg-dark" id="mainNav">
     <a class="navbar-brand js-scroll-trigger mr-sm-5 mb-0 " href="#page-top">Sistema prestamos</a>
     <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> Menu
@@ -51,7 +41,6 @@
         <a class="btn btn-primary" href="1-login.php">Sign In</a>
       </form>
       <form class="form-inline my-2 my-lg-0">
-        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
         <a class="btn btn-secondary" disabled>Sign Up</a>
         <!-- href="2-singup.php" -->
       </form>
@@ -70,7 +59,6 @@
       </div>
     </div>
   </header>
-
 
   <section class="features-icons p-md-4 p-lg-5 text-center bg-light" id="team">
     <div class="container p-lg-4">

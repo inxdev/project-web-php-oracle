@@ -7,5 +7,7 @@
 <link href="assets/css/simple-line-icons.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 <!-- Custom styles for this template -->
+<link href="assets/css/landing-page.css" rel="stylesheet">
+
 <link rel="stylesheet" href="assets/css/inscripcion.css">
 <!-- <script src="https://kit.fontawesome.com/f87a832d0e.js" crossorigin="anonymous"></script> -->

@@ -11,7 +11,6 @@
   </div>
 </header>
 
-
 <section class="features-icons p-md-4 p-lg-5 text-center bg-light" id="team">
   <div class="container p-lg-4">
     <div class="row justify-content-center mb-3">

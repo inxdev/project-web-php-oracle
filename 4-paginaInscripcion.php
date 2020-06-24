@@ -12,8 +12,11 @@ if (isset($_SESSION['usuarioSession'])) {
   <head>
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Moura Elias" content="">
+
     <title>Inscripcion Cliente</title>
     <?php
     //llamado del archivo que contiene los estilos
@@ -30,12 +33,12 @@ if (isset($_SESSION['usuarioSession'])) {
     // echo "<p>El usuario es: $_SESSION[usuarioSession]</p>";
     // echo "<p>El usuario es: $_SESSION[passwordSession]</p>";
     ?>
-    <!-- Division para el registro -->
 
-    <div class="container-fluid">
+    <!-- Division para el formulario de registro -->
+    <div class="container-fluid  my-5">
       <div class="row">
         <div class="col-sm-10 col-md-7 col-lg-8 mx-auto">
-          <div class="card card-signin my-5">
+          <div class="card card-signin">
             <div class="card-body">
               <!-- Titulo -->
               <h5 class="card-title text-center">Inscripcion clientes</h5>

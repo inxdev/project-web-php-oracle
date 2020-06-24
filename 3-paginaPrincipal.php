@@ -11,23 +11,15 @@ if (isset($_SESSION['usuarioSession'])) {
 
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="Moura Elias" content="">
     <title>Inicio</title>
 
-    <!-- Boostrap y archivos de estilos -->
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- Custom fonts for this template -->
-    <link href="assets/css/all.css" rel="stylesheet">
-    <link href="assets/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <!-- <link rel="stylesheet" href="assets/css/inscripcion.css"> -->
-    <!-- <script src="https://kit.fontawesome.com/f87a832d0e.js" crossorigin="anonymous"></script> -->
-    <link href="assets/css/landing-page.css" rel="stylesheet">
+    <?php
+    require_once "php/estilos.php";
+    ?>
 
   </head>
 
@@ -35,12 +27,6 @@ if (isset($_SESSION['usuarioSession'])) {
     <?php
     // llamada al archivo que contiene el menu (NavBar) 
     require_once "php/NavBar.php";
-    // llamada al archivo que contiene la conexion a la bd con los datos de session
-    require_once "php/conexionSecundaria.php";
-
-    // codigo para mostrar el usuario y la password del usuario que se logueo y para el cual se creo la session
-    // echo "<p>El usuario es: $_SESSION[usuarioSession]</p>";
-    // echo "<p>El usuario es: $_SESSION[passwordSession]</p>";
 
     // Llamamos a al archivo que contiene el body de la pagina principal
     require_once "php/bodyPrincipal.php";
